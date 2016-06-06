@@ -10,6 +10,7 @@ namespace SimpleCardgame
     {
         private string _value;
         private string _suit;
+      
 
         // Konstruktor
         public Card(string cardValue, string cardSuit)
@@ -20,5 +21,8 @@ namespace SimpleCardgame
 
         // ToString Override
         public override string ToString() { return _value + " of " + _suit; }
+    
     }
+    
+
 }
