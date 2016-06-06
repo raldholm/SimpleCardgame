@@ -30,7 +30,7 @@ namespace SimpleCardgame
             deck = new Card[NumberOfCards];
             currentCard = 0;
             ranNum = new Random();
-            // Skapa och sortera kortlek med 13 kort per beklädnad
+            // Skapa och sortera kortlek med 13 kort per beklädnad (suits)
             for (int count = 0; count < deck.Length; count++)
             {
                 deck[count] = new Card(values[count % 13], suits[ count / 13]);
@@ -59,7 +59,7 @@ namespace SimpleCardgame
 
         public Card DealCard()
         {
-            // Så länge vi är i kortleken så så nästa kort visas
+            // Så länge vi är i kortleken så ska nästa kort visas
             if (currentCard < deck.Length)
                 return deck[currentCard++];
             else
